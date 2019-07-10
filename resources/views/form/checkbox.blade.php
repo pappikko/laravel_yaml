@@ -16,7 +16,7 @@
 
     <label for="{{$id}}" class="button {{$class}}">
         <span>{{$label}}</span>
-        {!! Form::radio($name, $val, $bool, ['id' => $id]) !!}
+        {!! Form::checkbox($name, $val, $bool, ['id' => $id]) !!}
     </label>
 
 @endforeach
