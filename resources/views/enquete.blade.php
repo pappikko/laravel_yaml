@@ -7,11 +7,25 @@
     <title>アンケート</title>
 </head>
 <body>
-    @include('form.radio', [
-        'items' => $enqueteItems['family'],
-        'name' => 'family',
-        'checked' => '1'
-    ])
-    {{dd($enqueteItems)}}
+    <div>
+        @include('form.radio', [
+            'items' => $enqueteItems['family'],
+            'name' => 'family',
+            'checked' => '1'
+        ])
+    </div>
+
+    <div>
+        @include('form.checkbox', [
+            'items' => $enqueteItems['sex'],
+            'name' => 'sex',
+            'checked' => '1'
+        ])
+    </div>
+
+    <div>
+        {!! Form::select('trigger', array_flip($enqueteItems['trigger']), '1') !!}
+    </div>
+
 </body>
 </html>
