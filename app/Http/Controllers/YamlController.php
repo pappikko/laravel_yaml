@@ -3,16 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Symfony\Component\Yaml\Yaml;
-use App\Http\Controllers\Controller;
+use Yaml;
+use App\Http\Controllers\BaseController;
 
-class YamlController extends Controller
+class YamlController extends BaseController
 {
-    private $yamlArr = [];
 
-    public function setYamlArr()
+    public function index()
     {
-        $this->yamlArr = Yaml::parse(file_get_contents(\config_path('enquete.yaml')));
-        dd($this->yamlArr);
+        $enqueteItems = $this->enqueteItems;
+        return view('enquete', compact('enqueteItems'));
+    }
+
+    public function checkYamlItems()
+    {
+        dd($this->enqueteItems);
     }
 }

@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('yaml', 'YamlController@setYamlArr');
+Route::get('enquete', 'YamlController@index');
+Route::get('checkYamlItems', 'YamlController@checkYamlItems');

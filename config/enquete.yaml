@@ -1,3 +1,46 @@
-- yaml1
-- yaml2
-- yaml3
+# 配列 ['yaml1', 'yaml2', 'yaml3']
+# - yaml1
+# - yaml2
+# - yaml3
+
+# [0 => ['test1', 'test2', 'test3']]
+# -
+#   - test1
+#   - test2
+#   - test3
+
+#ハッシュ(phpでは結局配列なのね)
+#連想配列になるので便利
+# yaml4: test4
+# yaml5: test5
+# yaml6: test6
+
+#多次元
+# yaml7:
+#   yaml-a: test-a
+#   yaml-b: test-b
+#   yaml-c: test-c
+# yaml8:
+#   yaml-d: test-d
+#   yaml-e: test-e
+#   yaml-f: test-f
+
+family:
+  0: 本人
+  1: 父
+  2: 母
+  3: 兄
+  4: 姉
+
+sex:
+  0: 男
+  1: 女
+  2: その他
+
+trigger:
+  -1: ------
+  0: 雑誌
+  1: テレビCM
+  2: ネット広告
+  3: 検索
+  4: その他
