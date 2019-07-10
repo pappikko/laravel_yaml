@@ -7,6 +7,11 @@
     <title>アンケート</title>
 </head>
 <body>
+    @include('form.radio', [
+        'items' => $enqueteItems['family'],
+        'name' => 'family',
+        'checked' => '1'
+    ])
     {{dd($enqueteItems)}}
 </body>
 </html>
