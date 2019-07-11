@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('enquete', 'YamlController@index');
 Route::get('checkYamlItems', 'YamlController@checkYamlItems');
+Route::get('checkPrefList', 'YamlController@checkPrefList');

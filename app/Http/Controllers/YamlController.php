@@ -19,4 +19,9 @@ class YamlController extends BaseController
     {
         dd($this->enqueteItems);
     }
+
+    public function checkPrefList()
+    {
+        dd($this->prefList);
+    }
 }
